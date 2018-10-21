@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <meta  name="viewport" content="width='device-width,initial-scale=1,maximum-scale=1, user-scalable=no">
+   <title>inbox列表界面</title>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap-editable.css">
+    <link rel="stylesheet" href="../css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../css/inbox.css">
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src='../js/bootstrap.min.js'></script>
+    <script type="text/javascript" src='../js/bootstrap-editable.min.js'></script>
+    <!--滚动条插件-->
+    <script src="../js/jquery.mCustomScrollbar.concat.min.js"></script>
+</head>
+<body class='Form mCustomScrollbar light _mCS_1 mCS-autoHide' data-mcs-theme="minimal-dark">
+    <table width="100%" class="list_head">
+      <tr>
+       <td style="width:3%;">#</td>
+       <td style="width:11%">Ref No.</td>
+       <td style="width:16%">Applicant</td>
+       <td style="width:14%">Department</td>
+       <td style="width:10%">Total Amount</td>
+       <td style="width:12%">Current Approver</td>
+       <td style="width:12%">Status</td>
+       <td style="width:12%;">Last Modified</td>
+     </tr>     
+    </table>
+   <table class="inbox_list">
+     <tbody>
+       <tr onclick="reject()">
+         <td style="width:3%;">1</td>
+         <td style="width:11%">BTA-17-00021</td>
+         <td style="width:16%">Tian Xiang Zhang</td>
+         <td style="width:14%">IT Enterprise System</td>
+         <td style="width:10%">RMB 15,000,00</td>
+         <td style="width:12%">Tian Xiang Zhang</td>
+         <td style="width:12%">Reject</td>
+         <td style="width:12%;">02/15/2017 14:26:59</td>
+       </tr>
+       <tr>
+         <td>2</td>
+         <td>HK-18-CAS-00025</td>
+         <td>MICHAEL KAI CHIU CHEUNG</td>
+         <td>Testing Methodology</td>
+         <td>HKD 15,000,00</td>
+         <td>[HK ACCT MGR]</td>
+         <td>Accounting Manager Approval</td>
+         <td>02/15/2017 14:26:59</td>
+       </tr>
+       <tr>
+         <td>3</td>
+         <td>BTA-17-00021</td>
+         <td>Tian Xiang Zhang</td>
+         <td>Advance System & Methodology Development</td>
+         <td>RMB 15,000,00</td>
+         <td>[Admin Group]</td>
+         <td>HK Admin Review</td>
+         <td>02/15/2017 14:26:59</td>
+       </tr>
+       <tr>
+         <td>4</td>
+         <td>BTA-17-00021</td>
+         <td>Tian Xiang Zhang</td>
+         <td>Advance System & Methodology Development</td>
+         <td>RMB 15,000,00</td>
+         <td>[Admin Group]</td>
+         <td>HK Admin Review</td>
+         <td>02/15/2017 14:26:59</td>
+       </tr>
+       <tr>
+         <td>5</td>
+         <td>BTA-17-00021</td>
+         <td>Tian Xiang Zhang</td>
+         <td>Advance System & Methodology Development</td>
+         <td>RMB 15,000,00</td>
+         <td>[Admin Group]</td>
+         <td>HK Admin Review</td>
+         <td>02/15/2017 14:26:59</td>
+       </tr>
+        <tr>
+         <td style="width:3%;">6</td>
+         <td style="width:11%">BTA-17-00021</td>
+         <td style="width:16%">Tian Xiang Zhang</td>
+         <td style="width:14%">IT Enterprise System</td>
+         <td style="width:10%">RMB 15,000,00</td>
+         <td style="width:12%">Tian Xiang Zhang</td>
+         <td style="width:12%">Reject</td>
+         <td style="width:12%;">02/15/2017 14:26:59</td>
+       </tr>
+       <tr>
+         <td>7</td>
+         <td>HK-18-CAS-00025</td>
+         <td>MICHAEL KAI CHIU CHEUNG</td>
+         <td>Testing Methodology</td>
+         <td>HKD 15,000,00</td>
+         <td>[HK ACCT MGR]</td>
+         <td>Accounting Manager Approval</td>
+         <td>02/15/2017 14:26:59</td>
+       </tr>
+       <tr>
+         <td>8</td>
+         <td>BTA-17-00021</td>
+         <td>Tian Xiang Zhang</td>
+         <td>Advance System & Methodology Development</td>
+         <td>RMB 15,000,00</td>
+         <td>[Admin Group]</td>
+         <td>HK Admin Review</td>
+         <td>02/15/2017 14:26:59</td>
+       </tr>
+       <tr>
+         <td>9</td>
+         <td>BTA-17-00021</td>
+         <td>Tian Xiang Zhang</td>
+         <td>Advance System & Methodology Development</td>
+         <td>RMB 15,000,00</td>
+         <td>[Admin Group]</td>
+         <td>HK Admin Review</td>
+         <td>02/15/2017 14:26:59</td>
+       </tr>
+       <tr>
+         <td>10</td>
+         <td>BTA-17-00021</td>
+         <td>Tian Xiang Zhang</td>
+         <td>Advance System & Methodology Development</td>
+         <td>RMB 15,000,00</td>
+         <td>[Admin Group]</td>
+         <td>HK Admin Review</td>
+         <td>02/15/2017 14:26:59</td>
+       </tr>
+      <tr>
+         <td>11</td>
+         <td>BTA-17-00021</td>
+         <td>Tian Xiang Zhang</td>
+         <td>Advance System & Methodology Development</td>
+         <td>RMB 15,000,00</td>
+         <td>[Admin Group]</td>
+         <td>HK Admin Review</td>
+         <td>02/15/2017 14:26:59</td>
+       </tr>
+       <tr>
+         <td>12</td>
+         <td>BTA-17-00021</td>
+         <td>Tian Xiang Zhang</td>
+         <td>Advance System & Methodology Development</td>
+         <td>RMB 15,000,00</td>
+         <td>[Admin Group]</td>
+         <td>HK Admin Review</td>
+         <td>02/15/2017 14:26:59</td>
+       </tr>
+     </tbody>
+   </table>
+  <div class="page_box">
+   <nav aria-label="Page navigation">
+   <ul class="pagination">
+    <li>
+      <a href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li><a href="#">1</a></li>
+    <li><a href="#">...</a></li>
+    <li><a href="#">3</a></li>
+    <li>
+      <a href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+    <span class="page">Page</span>
+    <form action="#">
+      <input type="text" name="">
+      <button type="submit">GO</button>  
+    </form>
+    </ul>
+    </nav>
+   </div>
+   <script type="text/javascript">
+   // 点击列表项进入列表详情页
+   $('.inbox_list tbody tr').click(function(){
+    if($(this).index()==0){
+       reject();
+    }else{
+      window.location.href = './inbox_detail.html?status='+'';
+    }
+   })
+    function reject(){
+    window.location.href='./Reject.html';
+   }
+   </script>
+</body>
+</html>

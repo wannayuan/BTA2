@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <meta  name="viewport" content="width='device-width,initial-scale=1,maximum-scale=1, user-scalable=no">
+   <title>审批不可编辑</title>
+   <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+   <link rel="stylesheet" type="text/css" href="../css/reset.css">
+   <link rel="stylesheet" type="text/css" href="../css/inbox_detail.css">
+   <link rel="stylesheet" href="../css/jquery.mCustomScrollbar.css">
+   <script type="text/javascript" src="../js/jquery.min.js"></script>
+   <script type="text/javascript" src='../js/bootstrap.min.js'></script>
+   <link href="../css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+  <!-- 日历组件的js文件 -->
+   <script type="text/javascript" src="../js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+  <script type="text/javascript" src="../js/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
+  <!--滚动条插件-->
+  <script src="../js/jquery.mCustomScrollbar.concat.min.js"></script>
+</head>
+<body class='Form mCustomScrollbar light _mCS_1 mCS-autoHide' data-mcs-theme="minimal-dark">
+    <div class="Form_head">
+      <span class="page1 checked">BTA</span>
+      <span class="page2">Booking Particulars</span>
+      <!-- 被退回的申请该按钮以及页面隐藏 -->
+      <span class="page3">Cash Advance</span>
+      <span class="page4">claim</span>
+      <button>Save</button>
+      <button>View Policy</button>
+      <button>Travel Advice</button>
+    </div>
+     <div class="Form_table">
+     <div id="BTA" Class='page1'>
+      <p class="change-title">Air-Ticket/Hotel Reservation Form</p>
+      <div class="child-box">
+       <p>Application Information</p>
+      <table>
+          <tr>
+            <td><span>Ref No. ：</span><span>HK-18-CAS-00025</span></td>
+            <td><span>Status ：</span><span>Accounting Manager Approval</span></td>
+          </tr>
+           <tr>
+            <td><span>Submit Date. ：</span><span>05/16/2018</span></td>
+            <td><span>BTA Ref No. ：</span><span>BTA-18-00911</span></td>
+          </tr>
+           <tr>
+            <td><span>Prepared By. ：</span><span>MICHAEL KAI CHIU CHEUNG/HK/SAE</span></td>
+            <td><span>Prepared By Phone ：</span><span>(31)8589</span></td>
+          </tr>
+             <tr>
+            <td><span>Applicant Name ：</span><span>MICHAEL KAI CHIU CHEUNG/HK/SAE</span></td>
+            <td><span>Applicant Phone ：</span> <span>(31)8589</span></td>
+          </tr>
+             <tr>
+            <td><span>Applicant Staff No. ：</span><span>M811639</span></td>
+            <td><span>Applicant Staff Type ：</span><span>Staff-HK</span></td>
+          </tr>
+          <tr>
+            <td><span>Applicant Department ：</span><span>Testing Methodology Development--AG33</span></td>
+            <td><span>Acct.Location ：</span> <span>HK(5000)</span></td>
+          </tr>
+            <tr>
+            <td colspan="2"><span>Person Assigned To Pick Up To Cash Advance ：</span><span>MICHAEL KAI CHIU CHEUNG/HK/SAE</span></td>
+          </tr>
+        </table>
+        <p>Travel Details</p>
+        <table class="details-table">
+           <tr>
+           <td>Home Leave/Resign：<span>Resignation</span></td>
+           <td>Trip Purpose：<span>Resignation</span></td>
+           </tr>
+           <tr>
+            <td colspan="2"><i>*Detail of Trip (Please describe why need this trip? whom will approach/meet?)</i></td>
+           </tr>
+           <tr>
+            <td colspan="2">
+             <textarea readonly>XX</textarea>
+            </td>
+           </tr>
+          <tr>
+           <td colspan="2"><i>*TRIP AGENDA (Please list out the full schedule itinerary with detail agenda.)</i></td>
+          </tr>
+          <tr>
+            <td colspan="2">
+             <textarea readonly>XX</textarea>
+            </td>
+           </tr>
+        </table>
+     </div>
+     <div class="child-box">
+      <p>Request Details</p>
+      <div class="child-container">
+        <p>*Traveller<span>Name on passport</span></p>
+        <table>
+         <tr>
+          <td>Name Code</td>
+          <td>Sex</td>
+          <td>Family Name</td>
+          <td>Given Name</td>
+          <td>Period From</td>
+          <td width="2%">/</td>
+          <td>Period To</td>
+          <td>No. Of Days</td>
+         </tr>
+          <tr>
+          <td>T1</td>
+          <td>Male</td>
+          <td>3</td>
+          <td>3</td>
+          <td>06/02/2018</td>
+          <td width="2%">/</td>
+          <td>06/09/2018</td>
+          <td>8</td>
+         </tr>
+        </table>
+        <P>*Transport: Air/Train/Bus/Ferry</P>
+        <table>
+          <tr>
+          <td>Ref</td>
+          <td>Name Code</td>
+          <td>Date</td>
+          <td>From</td>
+          <td>To</td>
+          <td>Arrival Time/</td>
+         </tr>
+          <tr>
+          <td>A1</td>
+          <td>T1</td>
+          <td>06/06/2018</td>
+          <td>USA-San Jose</td>
+          <td>GETMANY-Berlin</td>
+          <td>am</td>
+          </tr>
+        </table>
+        <p>Hotel Reservation</p>
+        <table>
+          <tr>
+           <td>Check-in Date</td>
+           <td>Check-out Date</td>
+           <td>City</td>
+          </tr>
+          <tr>
+           <td>--</td>
+           <td>--</td>
+           <td>--</td>
+          </tr>
+        </table>
+      </div>
+      </div>
+      <div class="child-box">
+       <p>Cash Advance Requisition(For areas other than USA, Japan,China & Singapore, only provide either US$ or HK$) 
+       </p>
+       <p class="warning">All cash advance requisition need to be supported by fully approved Business Trip Application Form.</p>
+       <p class="warning">The requisition will be processed by Accounting Department.</p>
+       <div class="child-container">
+       <table>
+        <tr>
+         <td>Please choose one currency except the trip is over one country</td>
+         <td>Advance Payment(Amount)</td>
+         <td>Please state budget usage and expected payment schedule</td>
+       </tr>
+       <tr>
+         <td>--</td>
+         <td>--</td>
+         <td>--</td>
+       </tr>
+       </table>
+       <div class="Assigned">
+          <label>>>Person Assigned To Pick Up Cash Advance:</label>
+          <!-- 选择审批人 -->
+          <img src='../images/book.png' id="book">
+          <input type="text" name="Assigned" readonly>
+       </div>
+      </div>
+      </div>
+      <div class="child-box">
+        <p>Dept.Approval</p>
+        <div class="child-container">
+        <table>
+        <tr>
+         <td></td>
+         <td width="30%">Role</td>
+         <td>Name</td>
+         <td>Title</td>
+         <td>Time</td> 
+        </tr>
+        <tr>
+         <td><img src="../images/current.png"></td>
+         <td>Admin Update</td>
+         <td>HK Admin</td>
+         <td>--</td>
+         <td>--</td> 
+        </tr>
+        </table>
+        </div>
+      </div>
+      <div class="child-box">
+        <p>Audit Log</p>
+        <div class="child-container">
+        <table>
+         <tr>
+           <td>Date</td>
+           <td>Name</td>
+           <td>Action</td>
+           <td>Comment</td>
+          </tr>
+          <tr>
+           <td>5/16/2018 9:33:56 AM</td>
+           <td>System</td>
+           <td>Create Cash Advance</td>
+           <td>-</td>
+          </tr>
+        </table>
+        </div>
+      </div>
+      <div class="actions">
+       <button>Home</button>
+       <button>Return</button>
+       <button>Approval</button>
+      </div>
+    </div>
+    <!-- Booking Parculars-->
+    <div id="Booking" class="page2">
+       <p class="change-title">Booking Particulars</p>
+       <form action="" method="">
+       <div class="child-box">
+         <p>Application Information</p>
+         <table>
+           <tr>
+             <td><span>Date 日期 ：</span><span>02/13/2017</span></td>
+             <td><span>Ref No. 申请编号 ：</span><span>BTA-17-0021</span></td>
+           </tr>
+           <tr>
+             <td><span>Application 申请人 ：</span><span>Tian Xiang Zhang/DN2/SAE</span></td>
+             <td><span>Prepared By 姓名 ：</span><span>Tian Xiang Zhang/DN2/SAE</span></td>
+           </tr>
+           <tr>
+             <td><span>Staff Type 员工类型 ：</span><span>DGN Staff</span></td>
+             <td><span>State 状态 ：</span> <span>Admin Update</span></td>
+           </tr>
+           <tr>
+             <td><span>Staff ID 工号 ：</span><span>M08039</span></td>
+             <td><span>Admin Location ：</span><span> DGN Admin</span></td>
+           </tr>
+         </table>
+       </div>
+       <div class="child-box">
+         <p  class="collapse_img"><!-- <img src="../images/sub.png"> -->Admin Update</p>
+         <div class="child-container">
+         <table class="normal-table">
+           <tr>
+             <td colspan="2">Event:<span>02/13/2017</span></td>
+           </tr>
+           <tr>
+             <td>Contact Number:<span>Tian Xiang Zhang/DN2/SAE</span></td>
+              <td>Trip Purpose: <span>BTA-17-0021</span></td>
+           </tr>
+           <tr>
+             <td>Applicant Department:<span>DGN Staff</span></td>
+             <td>Trip Expense Deduct From:<span>Tian Xiang Zhang/DN2/SAE</span></td>
+           </tr>
+         </table>
+          <p>Air-Ticket</p>
+          <table>
+            <tr>
+             <td>Ref</td>
+             <td>Name</td>
+             <td>Type</td>
+             <td>Date</td>
+             <td>From</td>
+             <td>To</td>
+             <td>Flight #</td>
+             <td>Department time</td>
+             <td>Arrival time</td>
+            </tr>
+            <tr>
+             <td>A1</td>
+             <td>T1-Cheung,Kai Chiu</td>
+             <td>Air</td>
+             <td>05/20/2018</td>
+             <td>HONGKONG</td>
+             <td>USA-San Francisco</td>
+             <td>CX870</td>
+             <td>14:10</td>
+             <td>11:30</td>
+            </tr>
+          </table>
+          <P>Confirmed Travel Period: From 02/09/2017  To 02/24/2017 </P>
+          <p>Hotel Reservation</p>
+          <table>
+           <tr>
+            <td width="5%"></td>
+            <td width="25%">Check-in Date</td>
+            <td width="25%">Check-out Date</td>
+            <td>City</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>no data</td>
+            <td>no data</td>
+            <td>no data</td>
+          </tr>
+         </table>
+         <p>Trip Fare</p>
+         <table>
+           <tr>
+            <td>Ref</td>
+            <td>Travel Agency</td>
+            <td>Invioce No.</td>
+            <td>Class</td>
+            <td>Currency</td>
+            <td>Fare</td>
+            <td>Tax</td>
+            <td>No Show</td>
+            <td>Re-Booking</td>
+            <td>Refund Penalty</td>
+            <td>Total</td>
+           </tr>
+           <tr>
+            <td>T1</td>
+            <td>T1</td>
+            <td>BTA-17-00021</td>
+            <td>Economy Class</td>
+            <td>HKD</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+            <td>0.00</td>
+           </tr>
+         </table>
+          </div>
+       </div>
+       <div class="child-box">
+         <p class="collapse_img"><!-- <img src="../images/sub.png"> -->Attachment Information</p>
+         <div class="child-container">
+         <table>
+          <tr>
+           <td>File Name</td>
+           <td>File Description</td>
+           <td>Uploaded</td>
+           <td>Time</td> 
+          </tr>
+          <tr>
+           <td>T1</td>
+           <td>T1</td>
+           <td>T1</td>
+           <td>--</td> 
+          </tr>
+         </table>
+         </div>
+       </div>
+      <div class="child-box">
+       <p class="collapse_img"><!-- <img src="../images/sub.png"> -->Approval Status</p>
+       <div class="child-container">
+       <table>
+        <tr>
+         <td></td>
+         <td width="30%">Role</td>
+         <td>Name</td>
+         <td>Title</td>
+         <td>Time</td> 
+        </tr>
+        <tr>
+         <td><img src="../images/current.png"></td>
+         <td>Admin Update</td>
+         <td>HK Admin</td>
+         <td>--</td>
+         <td>--</td> 
+        </tr>
+       </table>
+       </div>
+     </div>
+     <div class="actions">
+       <button>Admin Update</button>
+       <button>*Admin Assign</button>
+     </div>
+     </form>
+    </div>
+    <!-- Cash Advance-->
+    <!-- 被退回的申请该部分隐藏 -->
+    <div id="Advance" class="page3">
+      <p class="change-title">Cash Advance Application Form</p>
+      <p>预支金额申请表</p>
+      <div class="child-box">
+        <p>Application Information</p>
+        <table>
+          <tr>
+            <td><span>Ref No. ：</span><span>HK-18-CAS-00025</span></td>
+            <td><span>Status ：</span> <span>Accounting Manager Approval</span></td>
+          </tr>
+           <tr>
+            <td><span>Submit Date. ：</span><span>05/16/2018</span></td>
+            <td><span>BTA Ref No. ：</span> <span>BTA-18-00911</span></td>
+          </tr>
+           <tr>
+            <td><span>Prepared By. ：</span><span>MICHAEL KAI CHIU CHEUNG/HK/SAE</span></td>
+            <td><span>Prepared By Phone ：</span> <span>(31)8589</span></td>
+          </tr>
+             <tr>
+            <td><span>Applicant Name ：</span> <span>MICHAEL KAI CHIU CHEUNG/HK/SAE</span></td>
+            <td><span>Applicant Phone ：</span> <span>(31)8589</span></td>
+          </tr>
+             <tr>
+            <td><span>Applicant Staff No. ：</span> <span>M811639</span></td>
+            <td><span>Applicant Staff Type ：</span> <span>Staff-HK</span></td>
+          </tr>
+          <tr>
+            <td><span>Applicant Department ：</span><span>Testing Methodology Development--AG33</span></td>
+            <td><span>Acct.Location ：</span><span>HK(5000)</span></td>
+          </tr>
+            <tr>
+            <td colspan="2"><span>Person Assigned To Pick Up To Cash Advance ：</span><span>MICHAEL KAI CHIU CHEUNG/HK/SAE</span></td>
+          </tr>
+        </table>
+      </div>
+      <div class="child-box">
+        <p class="collapse_img tips"><!-- <img src="../images/sub.png"> -->Details of Expense</p>
+        <p class="tips"><span>支取明细</span></p>
+        <div class="child-container">
+         <table>
+           <tr>
+            <td>#</td>
+            <td>Descriptions 摘要</td>
+            <td>Exchange Rate</td>
+            <td>Amount 金额</td>
+            <td>Total</td>
+           </tr>
+           <tr>
+            <td>1</td>
+            <td>transportation and meal</td>
+            <td>1 USD=7.8 hkd</td>
+            <td>USD 500.00</td>
+            <td>USD 500.00</td>
+           </tr>
+         </table>
+        <p>Detail Usage As Below详细用途说明如下：</p>
+        <table class="normal-table">
+          <tr>
+           <td>Trip Purpose:Customer visiting</td>
+          </tr>
+          <tr>
+           <td>Visit Seagate SDC for JHL meeting-May(21-23)</td>
+          </tr>
+        </table>
+        </div>
+      </div>
+      <div class="child-box">
+        <p class="collapse_img"><!-- <img src="../images/sub.png"> -->Acct/Cashier Payment Information</p>
+        <div class="child-container">
+         <table>
+           <tr>
+            <td>Descriptions 摘要</td>
+            <td>Exchange Rate</td>
+            <td>Amount 金额</td>
+            <td>Total</td>
+           </tr>
+           <tr>
+            <td>transportation and meal</td>
+            <td>1 USD=7.8 hkd</td>
+            <td>USD 500.00</td>
+            <td>USD 500.00</td>
+           </tr>
+         </table>
+         </div>
+      </div>
+      <div class="child-box">
+        <p class="collapse_img"><!-- <img src="../images/sub.png"> -->Approval Status</p>
+        <div class="child-container">
+          <p>HK Dept.Approval</p>
+          <table>
+           <tr>
+            <td></td>
+            <td>Role</td>
+            <td>Name</td>
+            <td>Title</td>
+            <td>Time</td>
+           </tr>
+           <tr>
+            <td><img src="../images/yes.png"></td>
+            <td>Selected Approver</td>
+            <td>MICHAEL KAI CHIU CHEUNG</td>
+            <td>Director</td>
+            <td>5/16/2018 12:33:33 AM</td>
+           </tr>
+          </table>
+          <p>HK Acct Approval</p>
+           <table>
+           <tr>
+            <td></td>
+            <td>Role</td>
+            <td>Name</td>
+            <td>Title</td>
+            <td>Time</td>
+           </tr>
+           <tr>
+            <td><img src="../images/yes.png"></td>
+            <td>Selected Approver</td>
+            <td>MICHAEL KAI CHIU CHEUNG</td>
+            <td>Director</td>
+            <td>5/16/2018 12:33:33 AM</td>
+           </tr>
+           <tr>
+            <td><img src="../images/current.png"></td>
+            <td>Selected Approver</td>
+            <td>MICHAEL KAI CHIU CHEUNG</td>
+            <td>Director</td>
+            <td>5/16/2018 12:33:33 AM</td>
+           </tr>
+          </table>
+        </div>
+      </div>
+      <div class="child-box">
+        <p class="collapse_img"><!-- <img src="../images/sub.png"> -->Audit Log</p>
+        <div class="child-container">
+        <table>
+          <tr>
+           <td>Date</td>
+           <td>Name</td>
+           <td>Action</td>
+           <td>Comment</td>
+          </tr>
+          <tr>
+           <td>5/16/2018 9:33:56 AM</td>
+           <td>System</td>
+           <td>Create Cash Advance</td>
+           <td>-</td>
+          </tr>
+        </table>
+        </div>
+      </div>
+      <div class="actions">
+        <button>Admin Update</button>
+        <button>*Admin Assign</button>
+      </div>
+    </div>
+    <!-- Claim -->
+    <div id="Claim" class="page4">
+      <p class="change-title">Travel Claim Form</p>
+      <p>差旅报销费用申请表</p>
+      <p class="warning">All original invoices must be submitted to Accounting Department upon submission</p>
+      <div class="child-box">
+        <p>Application Information</p>
+        <table>
+          <tr>
+            <td><span>Ref No. ：</span></span><span>HK-18-CAS-00025</span></td>
+            <td><span>Status ：</span></span><span>Accounting Manager Approval</span></td>
+          </tr>
+           <tr>
+            <td><span>Submit Date. ：</span><span>05/16/2018</span></td>
+            <td><span>BTA Ref No. ：</span><span>BTA-18-00911</span></td>
+          </tr>
+           <tr>
+            <td><span>Prepared By. ：</span><span>MICHAEL KAI CHIU CHEUNG/HK/SAE</span></td>
+            <td><span>Prepared By Phone ：</span><span>(31)8589</span></td>
+          </tr>
+             <tr>
+            <td><span>Applicant Name ： </span><span>MICHAEL KAI CHIU CHEUNG/HK/SAE</span></td>
+            <td><span>Applicant Phone ：</span> <span>(31)8589</span></td>
+          </tr>
+             <tr>
+            <td><span>Applicant Staff No. ：</span> <span>M811639</span></td>
+            <td><span>Applicant Staff Type ：</span><span>Staff-HK</span></td>
+          </tr>
+          <tr>
+            <td><span>Applicant Department ：</span><span>Testing Methodology Development--AG33</span></td>
+            <td><span>Acct.Location ：</span><span>HK(5000)</span></td>
+          </tr>
+            <tr>
+            <td><span>Trip Expenses Deduct From ：</span><span>MICHAEL KAI CHIU CHEUNG/HK/SAE</span></td>
+            <td><span>Charge to Cost Centre/Dept ：</span><span>--</span></td>
+          </tr>
+        </table>
+      </div>
+      <div class="child-box">
+        <p class="collapse_img tips"><!-- <img src="../images/sub.png"> -->Details of Expense</p>
+        <p class="tips"><span>支取明细</span></p>
+        <div class="child-container">
+         <div class="horizontal-images light" id="content1">
+         <table class="detail-table">
+           <tr>
+            <td></td>
+            <td>Date of Invoice<p>单据日期</p></td>
+            <td>Category<p>类别</p></td>
+            <td>Descriptions<P>摘要</P></td>
+            <td>Invoice No.<p>单据编号</p></td>
+            <td>Local Currency<p>当地金额</p></td>
+            <td>Currency<p>当地货币</p></td>
+            <td>Rate<P>汇率</P></td>
+            <td>Amount<p>金额</p></td>
+           </tr>
+           <tr>
+            <td>1</td>
+            <td>03/16/2016</td>
+            <td>Transportation </td>
+            <td class="sum">Airport to TXM，TXM to Hotel 直接在cshtml里面用table的属性去设置url、分页等信息。确实，如果我们看过它的api，会发现它初始化的每一个属性都对应一个table的属性</td>
+            <td>04631050</td>
+            <td>351.00</td>
+            <td>HKD</td>
+            <td>1 HKD=0.883368 RMB</td>
+            <td>RMB 351.00</td>
+           </tr>
+           <tr>
+            <td>2</td>
+            <td>03/16/2016</td>
+            <td>Transportation </td>
+            <td class="sum">Xiamen to ShenZhen</td>
+            <td>R033399</td>
+            <td>351.00</td>
+            <td>HKD</td>
+            <td>1 HKD=0.883368 RMB</td>
+            <td>RMB 351.00</td>
+           </tr>
+           <tr>
+            <td colspan="5" rowspan="3"></td>
+            <td class="cash_td">Cash Advance Ref<p>#预支单号</p></td>
+            <td colspan="2" class="cash_td">Total(*)<p>总计(*)</p></td>
+            <td>RMB 1476.87</td>
+           </tr>
+           <tr>
+            <td rowspan="2" class="cash_td">R033399</td>
+            <td colspan="2" class="cash_td">Amount ：<p>预支金额</p></td>
+            <td>N/A</td>
+           </tr>
+           <tr>
+            <td colspan="2" class="cash_td">Net Reimurse(Refund)<p>净报销额(退回)</p></td>
+            <td>RMB 1476.87</td>
+           </tr>
+         </table>
+         </div>
+        <p>Remark:(备注)</p>
+        <table class="normal-table">
+          <tr>
+           <td>CMA meeting in Taiwan</td>
+          </tr>
+        </table>
+        <p>Detail Usage As Below ：详细用途说明如下：</p>
+        <table class="normal-table">
+          <tr>
+           <td>3/16 Fly to Taiwan</td>
+          </tr>
+          <tr>
+           <td>3/17 Meeting to Taiwan</td>
+          </tr>
+          <tr>
+           <td>3/18 Back to Taiwan</td>
+          </tr>
+        </table>
+        </div>
+        </div>
+      <div class="child-box">
+        <p class="collapse_img"><!-- <img src="../images/sub.png"> -->Amount Summary</p>
+        <div class="child-container">
+         <div class="summary">
+             <table>
+               <tr>
+                <td>Claim Category</td>
+                <td>Total</td>
+               </tr>
+               <tr>
+                <td>Entertainment</td>
+                <td>RMB 292.62</td>
+               </tr>
+              <tr>
+                <td>Hotel</td>
+                <td>RMB 925.39</td>
+               </tr>
+              <tr>
+                <td>Transportation</td>
+                <td>RMB 258.86</td>
+               </tr>
+             </table>
+            <table>
+              <tr>
+               <td>Date</td>
+               <td>Total</td>
+              </tr>
+              <tr>
+               <td colspan="2" style="white-space: pre;">*Only summary amount of Meals,Telephone,Others.</td>
+              </tr>
+            </table>
+             <table>
+              <tr>
+               <td>Currency</td>
+               <td>Total</td>
+              </tr>
+              <tr>
+               <td>HKD</td>
+               <td>661.50</td>
+              </tr>
+              <tr>
+               <td>TWD</td>
+               <td>4,620.00</td>
+              </tr>
+             </table>
+           </div>
+         </div>
+      </div>
+      <div class="child-box">
+        <p class="collapse_img"><!-- <img src="../images/sub.png"> -->Related Attachments</p>
+        <div class="child-container">
+          <table>
+           <tr>
+            <td>File Name</td>
+            <td>File Description</td>
+            <td>Uploaded By</td>
+            <td>Time</td>
+           </tr>
+           <tr>
+            <td class="download" title="download"><img src="../images/attachment.png">scan-18.pdf</td>
+            <td>--</td>
+            <td>Raymond Wei Wu Si Ma</td>
+            <td>5/16/2018 12:33:33 AM</td>
+           </tr>
+          </table>
+        </div>
+      </div>
+      <div class="child-box">
+        <p class="collapse_img">Acct/Cashier Payment Information</p>
+        <div class="child-container">
+         <p>Payment Details</p>
+         <table>
+           <tr>
+            <td>Ex-rate Currency Difference</td>
+            <td>RMB 0.03</td>
+           </tr>
+           <tr>
+            <td>Net Reimburse(Refund)</td>
+            <td>RMB 1,474,90</td>
+           </tr>
+         </table>
+         <table>
+           <tr>
+            <td>Staff Name</td>
+            <td>Staff No.</td>
+            <td>Date</td>
+            <td>Location</td>
+            <td>Method</td>
+           </tr>
+           <tr>
+            <td>Angela Qing Qing Wang/CA/SAE</td>
+            <td>M574017</td>
+            <td>04/25/2016</td>
+            <td>STLCA</td>
+            <td>Cash</td>
+           </tr>
+         </table>
+        </div>
+      </div>
+      <div class="child-box">
+        <p class="collapse_img"><!-- <img src="../images/sub.png"> -->Approval Status</p>
+        <div class="child-container">
+          <p>CA Dept.Approval</p>
+          <table>
+           <tr>
+            <td></td>
+            <td>Role</td>
+            <td>Name</td>
+            <td>Title</td>
+            <td>Time</td>
+           </tr>
+           <tr>
+            <td><img src="../images/yes.png"></td>
+            <td>Selected Approver</td>
+            <td>MICHAEL KAI CHIU CHEUNG</td>
+            <td>Director</td>
+            <td>5/16/2018 12:33:33 AM</td>
+           </tr>
+          </table>
+          <p>STLCA Acct Approval</p>
+           <table>
+           <tr>
+            <td></td>
+            <td>Role</td>
+            <td>Name</td>
+            <td>Title</td>
+            <td>Time</td>
+           </tr>
+           <tr>
+            <td><img src="../images/yes.png"></td>
+            <td>Selected Approver</td>
+            <td>MICHAEL KAI CHIU CHEUNG</td>
+            <td>Director</td>
+            <td>5/16/2018 12:33:33 AM</td>
+           </tr>
+           <tr>
+            <td><img src="../images/current.png"></td>
+            <td>Selected Approver</td>
+            <td>MICHAEL KAI CHIU CHEUNG</td>
+            <td>Director</td>
+            <td>5/16/2018 12:33:33 AM</td>
+           </tr>
+          </table>
+          <p>CC List(Only authorised to view travel claim form)</p>
+          <table><tr><td>-------</td></tr></table>
+        </div>
+      </div>
+      <div class="child-box">
+        <p class="collapse_img"><!-- <img src="../images/sub.png"> -->Audit Log</p>
+        <div class="child-container">
+        <table>
+          <tr>
+           <td>Date</td>
+           <td>Name</td>
+           <td>Action</td>
+           <td>Comment</td>
+          </tr>
+          <tr>
+           <td>5/16/2018 9:33:56 AM</td>
+           <td>System</td>
+           <td>Create Cash Advance</td>
+           <td>-</td>
+          </tr>
+        </table>
+        </div>
+      </div>
+      <div class="actions">
+        <button>Print</button>
+        <button>View Policy</button>
+        <button>Home</button>
+      </div>
+    </div>
+    <!--  -->
+        </div>
+       </div>
+      </div>
+<!--     </form> -->
+  <script type="text/javascript">
+    //左上角按钮进行界面切换
+    $('.Form_head span').on('click',function(){
+      var index=$(this).index()+1;
+      var $spans=$(this).parent().find('span');
+      for(var i=1;i<=$spans.length;i++){
+        if(i===index){
+          console.log("相等的索引:"+i);
+          $(this).addClass('checked');
+          $('div.page'+i).css('display','block');
+        }else{
+          $('span.page'+i).removeClass('checked');
+          $('div.page'+i).css('display','none');
+        }
+      }
+    })
+   $('#book').click(function(){
+    alert("book弹窗");
+   })
+   $('#cc_list').click(function(){
+    alert('cc_list弹框');
+   }) 
+   // 水平滚动条
+   $("#content1").mCustomScrollbar({
+          axis:"x",
+          theme:"dark-thin",
+          autoExpandScrollbar:true,
+          advanced:{autoExpandHorizontalScroll:true}
+  });
+     //折叠表格
+   $('.collapse_img').click(function(){
+    if(!$(this).hasClass('had_collapse')){
+    $(this).addClass('had_collapse');
+    $(this).parent().find('.child-container').css('display','none');
+    }else{
+    $(this).removeClass('had_collapse');
+    $(this).parent().find('.child-container').css('display','block');
+    }
+   })
+   $('.collapse_img').hover(function(){
+    if(!$(this).hasClass('had_collapse')){
+      $(this).attr('title','点击折叠');
+    }else{
+      $(this).attr('title','点击展开');
+    } 
+   })
+
+   //判断摘要是否超过值 
+   $(function(){
+    $('td.sum').each(function(i,m){
+      var _m=$(m);
+      console.log('offsetWidth:'+this.offsetWidth+"scrollWidth:"+
+        this.scrollWidth);
+      if(this.offsetWidth<=this.scrollWidth){
+         console.log('我进来了');
+        var that=this;
+        var text=$(that).text();
+        $(that).attr('title',text);
+      }
+    })
+   })
+  </script>
+</body>
+</html>

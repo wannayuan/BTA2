@@ -1,0 +1,214 @@
+*{
+   font-family:"Helvetica Neue","Helvetica,Arial,sans-serif";
+}
+label{
+    font-weight: normal;
+}
+/*iframe{
+	background-color: #fafafa;
+}*/
+.Form{
+    width: 100%;
+    margin: auto;
+    max-height: 758px;
+    padding-right: 16px;
+}
+.Form_head{
+	height: 38px;
+/*    background-color: #fafafa;*/
+}
+.Form_head span{
+	 font-size: 16px;
+    line-height: 38px;
+    font-weight: 550;
+    font-family: 'Verdana';
+}
+button{
+	font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    background-color: #2D69EB;
+    color: #fff;
+    float: right;
+    margin-left:20px;
+    padding: 4px 8px;
+    border:none;
+}
+.Form_body{
+    box-shadow: 0px 0px 5px #ccc;
+	border-radius: 10px; 
+	background-color: #ffffff;
+}
+.Form_table{
+	padding: 26px;
+	width: 100%;
+}
+table{
+    width:100%;
+}
+.first-step,.second-step,.third-step,.forth-step,.fifth-step{
+	margin-top: 20px;
+}
+.first-step table td{
+	width: 35%;
+}
+.Form_table input:focus{
+   outline-color: #dddddd;
+/*   border-bottom: none;*/
+}
+.Form_table select:focus,.Form_table textarea:focus,.Form_table button:focus{
+   outline-style: none;
+}
+.first-step label,forth-step label{
+	padding-top: 10px;
+}
+.first-step input,select,.forth-step input{
+    border: none;
+    border: 1px solid #ddd;
+    display: block;
+    width: 80%;
+    height: 25px;
+    margin-bottom: 5px;
+    background-color: inherit;
+}
+.first-step input[disabled],.forth-step input[disabled]{
+	border: none;
+    background-color: #EEE;
+}
+p{
+    line-height: 20px;
+    margin: 0px;
+}
+.Form_table  p{
+    font-size: 18px;
+}
+p.warning{
+	color:red;
+	font-size:13px;
+}
+p>span{
+	font-size:14px;
+}
+.second-step table td:first-child{
+	width:70%;
+}
+.second-step lable,.second-step input{
+	margin-right:10px;
+}
+.second-step .tip{
+	font-style: italic;
+	line-height:25px;
+}
+.second-step select{
+	background-color: #EEE;
+	width: 150px;
+    display: inline-block;
+    text-align: center;
+}
+.second-step textarea{
+	height: 100px;
+	width: 100%;
+	background-color:#F1F6FE;
+	border: none;
+	text-indent: 10px;
+}
+/*.third-step{
+   background-color: #fefdf4;
+}*/
+.step-box{
+	position: relative;
+	padding-bottom: 40px;
+}
+.step-box p{
+	font-size: 14px;
+}
+/*.third-step,.step-box p{
+	background-color: #fefdf4;
+}*/
+.step-box p.height40{
+	height: 40px;
+    line-height: 40px;
+}
+.step-box table{
+   margin-top:8px;
+   background-color: #F1F6FE; 
+   line-height: 25px;
+}
+.step-box table tr>td:first-child{
+	padding-left: 10px;
+}
+.third-step table select{
+	width: 70px;
+	height: 20px;
+    margin-right:10px;
+}
+.third-step table input{
+	width: 80%;
+	height: 20px;
+    margin-bottom: 5px;
+    line-height: 20px;
+    border:1px solid #dddddd;
+}
+.third-step table input:focus{
+	outline-style: none;
+	border:1px solid #a9a9a9;
+}
+.step-box input[type=button]{
+	background-color: #2d69eb;
+    color: #fff;
+    width: 60px;
+    height: 28px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-top: 20px;
+}
+.third-step input[type=radio]{
+	width: inherit;
+	vertical-align: middle;
+    margin-right: 3px;
+}
+.Form_footer button{
+	margin:14px 0px 0px 0px;
+}
+.forth-step .step-box table input,select{
+	height:25px;
+	margin-bottom: 5px;
+}
+.Assigned{
+    margin: 20px 0px;
+}
+.Assigned #book:hover{
+	cursor: pointer;
+}
+.Assigned input:focus{
+	outline-style: none;
+	border-bottom: 1px solid #dddddd;
+}
+.Assigned input{
+	display: inline-block;
+	width: 60%;
+}
+span.Approver{
+	line-height:40px;
+}
+#submit,#logout{
+	display: none;
+}
+.tab tr td span.add-on{
+	margin-left: 4px;
+}
+.tab tr td span.add-on img{
+	margin-top: -8px;
+}
+.tab tr:nth-child(2)>td span.add-on{
+	margin-left: 0px;
+}
+.tab tr td label{
+	margin-left: 4px;
+	margin-right:5px;
+}
+.tab tr:nth-child(2)>td label{
+	margin-left: 0px;
+    margin-right: 0px;
+}

@@ -1,0 +1,222 @@
+*{
+    font-family:"Helvetica Neue","Helvetica,Arial,sans-serif";
+}
+body{
+     overflow-x: hidden;
+    background-color: #fafafa;
+}
+.float_left{
+  float: left;
+}
+.float_right{
+    float: right;
+}
+.header{
+	width: 100%;
+    height: 60px;
+    background-color: #fff;
+    border-bottom: 1px solid #F1F1F1;
+    padding-top: 13px;
+}
+.company_logo{
+    margin-left:8px;
+    margin-top:7px;
+}
+.zhedie{
+    width: 34px;
+    height: 34px;
+    margin-left: 10px;
+    display: inline-block;
+    float: left;
+}
+.zhedie:hover{
+    cursor: pointer;
+}
+.system_title{
+    font-size: 16px;
+    margin-left: 200px;
+}
+.login_information{
+    float: right;
+    width: 260px;
+    font-size:12px;
+}
+.login_left{
+    float: left;
+}
+.login_left>p{
+    margin-bottom: 2px;
+}
+.seperator{
+    width: 1px;
+    height: 34px;
+    background-color: gray;
+    float:left;
+    margin: 0 10px;
+}
+.login_out>a{
+    line-height:34px;
+    text-decoration:none;
+}
+.left-side{
+	background-color:#436CAE;
+	color: white;
+	position:relative;
+    float: left;
+    font-size: 14px;
+/*    font-weight: bold;*/
+}
+/*中等屏幕 桌面显示器*/
+@media screen and (min-width: 992px) {
+ .left-side>.nav{
+    width:215px;
+    margin-top:45px;
+    transition:all 0.3s;
+ } 
+ .nav-item ul{
+    left: 215px;
+    top: 5px;
+ }
+ .nav-mini .nav .nav-item ul{
+    position: absolute;
+    top:0px;
+    left:60px;
+    width:250px;
+  }
+}
+/*大屏幕 大桌面显示器*/
+@media screen and (min-width:1200px){
+ .left-side>.nav{
+    width:240px;
+    margin-top:45px;
+    transition:all 0.3s;
+ } 
+ .nav-item ul{
+    left: 240px;
+    top: 5px;
+ }
+ .nav-mini .nav .nav-item ul{
+    position: absolute;
+    top:0px;
+    left:60px;
+    width:250px;
+  }
+}
+/*手机设备 宽度不大于378*/
+@media screen and (max-width:378px) {
+  .left-side>.nav{
+    width:50px;
+    margin-top:45px;
+    transition:all 0.3s;
+ } 
+ .nav-item ul{
+    position: absolute;
+    left:50px;
+    top: 5px;
+ }
+.nav-item span,.nav-item .nav-icon-more {
+    display: none;
+  }
+.nav-mini .nav .nav-item ul{
+    position: absolute;
+    top:0px;
+    left:50px;
+    width:50%;
+  }
+}
+.left-side ul.nav>.nav-item{
+	height:45px;
+	line-height:45px;
+    width:100%;
+    transition:all .3s;
+	/*border-bottom: 1px solid gray;*/
+}
+.left-side ul.nav>.nav-item span{
+	margin-left:10px;
+    font-weight:550;
+    opacity: 1;
+}
+.nav-item .nav-icon{
+    margin-left:16px;
+}
+.nav-item .nav-icon-more{
+    float: right;
+    margin-right:10px;
+    height:45px;
+}
+.nav-item ul{
+    position: absolute;
+/*    left: 240px;*/
+    top: 5px;
+    width: 240px;
+    display:none;
+    list-style: none;
+    line-height:35px;
+    padding:0px;
+    z-index: 99 !important;
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: 2px 2px 5px #ccc;
+}
+.nav-item ul li>a{
+    text-decoration:none;
+    padding-left:10px;
+    width: 100%;
+    display:inline-block;
+}
+li.nav-item>a{
+    color: white;
+    padding: 0px;
+    display: inline-block;
+    width:100%;
+}
+.left-side ul.nav>.nav-item:hover{
+     background-color:#F1F6FE;
+     color:#436CAE;
+}
+.left-side ul.nav>.nav-item:hover .nav-icon img{
+    opacity: 1;
+}
+li.nav-item:hover>a:hover{
+    background-color:#F1F6FE;
+    color: #436CAE;
+}
+li.nav-item>a:visited{
+    background-color:#436CAE;
+    color: white;
+}
+.nav-item:hover>ul{
+	display:block;
+}
+.nav-item:hover>ul:hover{
+	display:block;
+}
+.nav-item>ul li:hover{
+	background-color:#F1F6FE;
+	color: #436CAE;
+}
+.right-side{
+    background-color:#fefdf4;
+    padding:15px;
+    position:absolute;
+    right:0px;
+    top:60px;
+    transition:all 0.3s;
+    border:none;
+}
+iframe{
+    width:100%;
+    height:100%;
+    border: none;
+/*    background-color:#fafafa;*/
+    padding:0px;
+    margin:0px;
+}
+/*左侧导航栏折叠效果*/
+/* nav-mini */
+/*.nav-mini .nav{width: 60px;}*/
+.nav-mini .nav .nav-icon{/* margin-left:-2px; */}
+.nav-mini ul.nav .nav-item span,.nav-mini ul.nav .nav-item i.nav-icon-more{opacity: 0;}
+.nav-mini .nav .nav-item ul{position: absolute;top:0px;z-index:99;width:250px;overflow: hidden;}
+.nav-mini .nav .nav-item:hover a:before{opacity:1;}
+.nav-mini .nav .nav-item:hover ul{display: block;}

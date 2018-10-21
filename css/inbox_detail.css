@@ -1,0 +1,227 @@
+/*iframe{
+	background-color: #fafafa;
+}*/
+.Form{
+    margin-bottom: 50px;
+    width: 99%;
+    margin-left:1%;
+    max-height: 727px;
+    padding-right: 20px;
+}
+.Form_head{
+	height: 38px;
+/*    background-color: #fafafa;*/
+}
+.Form_head span{
+	 font-size: 16px;
+    line-height: 38px;
+    font-weight: 550;
+}
+button{
+	font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    background-color: #2D69EB;
+    color: #fff;
+    float: right;
+    margin-left:20px;
+    padding: 4px 8px;
+    border:none;
+}
+.Form_table{
+	padding: 26px 0px;
+	width: 100%;
+}
+table{
+    width:100%;
+}
+.Form_table input:focus{
+   outline-color: #dddddd;
+   border-bottom: none;
+}
+.Form_table select:focus,.Form_table textarea:focus,.Form_table button:focus{
+   outline-style: none;
+}
+p{
+    line-height: 23px;
+    margin: 0px;
+}
+.Form_table  p{
+    font-size: 16px;
+}
+p.warning{
+	color:red;
+	font-size:12px;
+}
+p>span{
+	font-size:14px;
+	padding-left: 5px;
+}
+.Assigned{
+    margin: 20px 0px;
+}
+.Assigned #book:hover{
+	cursor: pointer;
+}
+.Assigned input:focus{
+	outline-style: none;
+	border-bottom: 1px solid #dddddd;
+}
+.Assigned input{
+	display: inline-block;
+	width: 60%;
+	border: none;
+	border-bottom: 1px solid #dddddd;
+}
+span.Approver{
+	line-height:40px;
+}
+.Form_head span{
+	padding: 10px 20px;
+    margin-right: 20px;
+}
+.checked{
+	border-bottom: 2px solid #2d69eb;
+	color:#2d69eb;
+}
+.fifth-step p{
+	font-size: 18px;
+    margin: 20px 0px 10px 0px;
+}
+.fifth-step table{
+	border: 1px solid #dddddd;
+    border-bottom: none;
+    line-height: 30px;
+}
+.fifth-step table tr{
+	border-bottom: 1px solid #dddddd;
+}
+.fifth-step table td{
+	padding-left: 10px;
+	width: 25%;
+}
+.actions{
+	margin-top: 40px;
+}
+.Form_head span:hover{
+	cursor: pointer;
+}
+#Booking,#Advance,#Claim{
+	display: none;
+}{
+	display: none;
+}
+.child-box p{
+    margin: 18px 0px 10px 0px;
+    font-size: 18px;
+}
+.child-box .tips{
+   margin:0px 0px 10px 0px;
+}
+.collapse_img.tips{
+  margin:18px 0px 0px 0px;
+}
+.child-box table{
+    line-height: 35px;
+    font-size: 14px;
+    background-color:#F1F6FE;
+}
+.child-box table td{
+	padding-left:20px;
+}
+.child-container p{
+    font-size: 14px;
+    margin: 0px 0px 10px 0px;
+    line-height:25px;
+}
+.child-container table{
+    border: 1px solid #ddd;
+    border-bottom: none;
+    background-color: #ffffff;
+    margin-bottom: 10px;
+}
+.child-container table tr{
+	border-bottom: 1px solid #ddd;
+}
+.child-container table tr:first-child{
+	background-color: #F1F6FE;
+}
+.child-box td>img{
+  margin-left:-15px;
+}
+.child-box td>span:nth-child(1){
+	font-size: 15px;
+}
+.child-box td>span:nth-child(2){
+	padding-left: 10px;
+}
+p.change-title{
+	font-size: 22px;
+}
+.child-box .normal-table tr,.child-container .normal-table{
+	background-color: #F1F6FE;
+	border: none;
+	line-height: 25px;
+}
+.child-box .details-table{
+  background-color:#fefdf4;
+}
+.child-box .details-table td{
+   padding:0px;
+}
+.details-table textarea{
+	width: 100%;
+    background-color:#F1F6FE;
+    min-width: 20px;
+    text-indent: 12px;
+    border:none;
+}
+.child-box .warning{
+	font-size: 13px;
+	line-height: 20px;
+	margin:0px;
+}
+.collapse_img:hover{
+	cursor:pointer;
+}
+.had_collapse{
+	background-color: #436cae;
+	color: #ffffff;
+	margin:5px 0px;
+	line-height:30px;
+    height: 30px;
+    padding-left:10px;
+    font-size: 14px;
+}
+.page4  table.detail-table .cash_td{
+	border:1px solid #ddd;
+	background-color: #F1F6FE;
+	text-align: right;
+	padding-right: 5px;
+	white-space: pre;
+}
+.download:hover{
+  cursor: pointer;
+}
+td.sum{
+	max-width:200px;
+    /*文本溢出包含元素时发生的事情，显示以省略符号来代替被修建的文本*/
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	position: relative;
+}
+td.sum:hover{
+    cursor: pointer;
+}
+.summary{
+	background-color: #F1F6FE;
+    padding:1% 0 1% 1%;
+    height: 200px;
+}
+.summary table{
+    width: 30%;
+    margin-right:1%;
+    float: left;
+}
+

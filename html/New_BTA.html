@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <meta  name="viewport" content="width='device-width,initial-scale=1,maximum-scale=1, user-scalable=no">
+   <title>创建出差申请单</title>
+   <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+   <!--  步骤组件的样式表-->
+   <link rel="stylesheet" type="text/css" href="../css/ystep.css">
+   <!-- 日历组件的样式表 -->
+   <link href="../css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="../css/jquery.mCustomScrollbar.css">
+   <link rel="stylesheet" type="text/css" href="../css/New_BTA.css">
+   <link rel="stylesheet" type="text/css" href="../css/reset.css">
+   <script type="text/javascript" src="../js/jquery.min.js"></script>
+   <script type="text/javascript" src='../js/bootstrap.min.js'></script>
+   <!--步骤组件的js文件-->
+   <script type="text/javascript" src="../js/setStep.js"></script>
+   <!-- 日历组件的js文件 -->
+   <script type="text/javascript" src="../js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+   <script type="text/javascript" src="../js/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
+  <!-- 滚动条插件 -->
+  <script src="../js/jquery.mCustomScrollbar.concat.min.js"></script>
+</head>
+<body class='Form mCustomScrollbar light _mCS_1 mCS-autoHide' data-mcs-theme="minimal-dark">
+    <form action="" method="" id="Step_form" class="Form">
+    <div class="Form_head">
+      <span>Business Trip Application Form</span>
+      <button>Save</button>
+      <button>View Policy</button>
+      <button>Travel Advice</button>
+    </div>
+    <div class="Form_body">
+      <div class="Form_table stepCont">
+      <!--步骤组件-->
+        <div class="ystep-container ystep-lg ystep-blue"></div>
+        <div class="wrapper pageCont">
+        <div class="first-step stepPage" id="page1">
+        <p>Application Information</p>
+        <p class="warning">Please complete the form with English</p>
+        <table>
+          <tr>
+            <td>
+            <label>Ref No. ：</label>
+            <input type="text" name="Ref_No">
+            </td>
+            <td>
+            <label>Status ：</label>
+            <input type="text" name="Status">
+            </td>
+            <td>
+            <label>Prepared By ：</label>
+            <input type="text" name="Prepared_person">
+            </td>
+          </tr>
+          <tr>
+            <td>
+            <label>Prepared By Phone ：</label>
+            <input type="text" name="Prepared_phone">
+            </td>
+            <td>
+            <label>Applicant Name ：</label>
+            <input type="text" name="">
+            </td>
+            <td>
+            <label>Applicant Phone ：</label>
+            <input type="text" name="" disabled="disabled">
+            </td>
+          </tr>
+          <tr>
+            <td>
+            <label>Applicant Staff No. ：</label>
+            <input type="text" name="" disabled="disabled">
+            </td>
+            <td>
+            <label>Applicant Staff Type ：</label>
+            <input type="text" name="" disabled="disabled" value="">
+            </td>
+            <td>
+            <label>Applicant Department ：</label>
+            <input type="text" name="" disabled="disabled" value="">
+            </td>
+          </tr>
+          <tr>
+            <td>
+            <label>Applicant Job Title. ：</label>
+            <input type="text" name="" disabled="disabled">
+            </td>
+            <td>
+            <label>BU Name ：</label>
+            <input type="text" name=""  value="">
+            </td>
+            <td>
+            <label>Working Location ：</label>
+            <input type="text" name=""  value="">
+            </td>
+          </tr>
+          <tr>
+            <td>
+            <label>Trip Expense Deduct Form ：</label>
+            <select>
+              <option value="">G100-Data Storage Products</option>
+              <option value="">G100-Data Storage Products</option>
+              <option value="">G100-Data Storage Products</option>
+            </select>
+            </td>
+            <td>
+            <label>Acct. location ：</label>
+            <input type="text" name="" disabled="disabled" value="">
+            </td>
+            <td>
+            <label>Contact No.：</label>
+            <input type="text" name=""  value="">
+            </td>
+          </tr>
+        </table>
+        </div>
+   <!--第2步-->
+     <div class="second-step stepPage" id="page2">
+       <p>Travel Detail</p>
+       <p class="warning">Please complete the form with English</p>
+        <table>
+          <tr>
+           <td>
+          <label>Home Leave/Resign ：</label>
+          <input type="radio" name="reason" value="Home Leave" checked id="radio1">
+          <label for="radio1">Home Leave</label>
+          <input type="radio" name="reason" value="Resignation" id="radio2">
+          <label for="radio2">Resignation</label>
+          <input type="radio" name="reason" value="N/A" id="radio3">
+          <label for="radio3">N/A</label>
+            </td>
+            <td>
+          <label>Trip Purpose：</label>
+          <select name="purpose">
+          <option value="" checked>-please select-</option>
+          <option value="" >Attend conference</option>
+          <option value="">Custom Visiting</option>
+          <option value="">Vendor Visiting</option>
+          <option value="">Training</option>
+          <option value="">Meeting</option>
+          <option value="">Interview</option>
+          <option value="">On board</option>
+          <option value="">Recruitment</option>
+          <option value="">Resignation</option>
+          <option value="">Others</option>
+          </select>
+          </td>
+          </tr>
+          <tr>
+           <td colspan="2">
+           <label class="tip"><i>*Detail of Trip (Please describe why need this trip? whom will approach/meet?)</i></label>
+           </td>
+          </tr>
+          <tr>
+           <td colspan="2">
+           <textarea cols="2"  name=""></textarea>
+           </td>
+          </tr>
+          <tr>
+           <td colspan="2">
+           <label class="tip"><i>* (Please describe why need this trip? whom will approach/meet?)</i></label>
+           </td>
+          </tr>
+          <tr>
+           <td colspan="2">
+           <textarea cols="2" rows="" name=""></textarea>
+           </td>
+          </tr>
+        </table>
+     </div>
+      <!--  第3步-->
+      <div class="third-step stepPage" id="page3">
+       <p>Request Details</p>
+       <p class="warning">Please complete the form with English</p>
+       <div class="step-box">
+       <p>*Traveller<span> ( Name on passport )</span></p>
+       <table class="tab">
+         <tr>
+           <td>Name Code</td>
+           <td>Sex</td>
+           <td>Family Name</td>
+           <td>Given Name</td>
+           <td>Period Form</td>
+           <td width="2%">/</td>
+           <td>Period To</td>
+           <td>No. Of Days</td>
+         </tr>
+          <tr>
+           <td>T1</td>
+           <td>
+              <select name="sex">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+             </select>
+           </td>
+           <td>
+              <input type="text" name="family_name">
+           </td>
+           <td>
+              <input type="text" name="given_name">
+           </td>
+           <td class="input-append date">
+              <input type="text" name="Period_from" class="Period_from">
+              <span class="add-on"><i class="glyphicon icon-calendar"><img src='../images/calendar.png'></i></span>
+           </td>
+           <td width="2%">/</td>
+           <td class="input-append date" >
+             <input type="text" name="Period_to" class="Period_to">
+            <span class="add-on"><i class="glyphicon icon-calendar"><img src='../images/calendar.png'></i></span>
+           </td>
+           <td>
+              <input type="number" name="period" class="period">
+           </td>
+           <td>
+             <span onclick="delTr(this)"><img src="../images/rubbish.png"></span>
+           </td>
+         </tr>
+         </table>
+         <input type="button"  value="Add" id="details"/>
+         </div>
+     <!--  -->
+        <div class="step-box">
+        <p class="height40">Transport: Air/Train/Bus/Ferry <span> ( Please verify that air-ticket date should within travel period. )</span></p>
+       <table class="tab">
+         <tr>
+           <td>Ref</td>
+           <td>Name Code</td>
+           <td>Date</td>
+           <td>From</td>
+           <td width="2%">/</td>
+           <td>To</td>
+           <td colspan="2">Arrival Time</td>
+         </tr>
+          <tr>
+           <td>A1</td>
+           <td>
+              <input type="text" name="name_code">
+           </td>
+           <td class="input-append date">
+              <input type="text" name="date">
+              <span class="add-on"><i class="glyphicon icon-calendar"><img src='../images/calendar.png'></i></span>
+          </td>
+           <td>
+              <input type="text" name="from_address">
+              <span><i><img src="../images/address.png"></i></span>
+           </td>
+           <td width="2%">/</td>
+           <td>
+              <input type="text" name="to_address">
+              <span><i><img src="../images/address.png"></i></span>
+           </td>
+           <td>
+             <input type="radio" name="from_time" value="am">
+             <label>am</label>
+             <input type="radio" name="from_time" value="pm">
+             <label>pm</label>
+           </td>
+           <td>             
+             <span onclick="delTr(this)"><img src="../images/rubbish.png"></span>
+           </td>
+           </tr>
+         </table>
+         <input type="button"  value="Add" id="Transport" />
+         </div>
+         <div class="step-box">
+         <p class="height40">Hotel Reservation</p>
+         <table class="tab">
+           <tr>
+              <td>Check-in Date</td>
+              <td>Check-Out Date</td>
+              <td colspan="2">City</td>
+           </tr>
+           <td class="input-append date" width="20%">
+             <input type="text" name="Check-in" class="Period_from">
+             <span class="add-on"><i class="glyphicon icon-calendar"><img src='../images/calendar.png'></i></span>
+           </td>
+          <td class="input-append date" id="form_datetime4" width="20%" >
+             <input type="text" name="Check-Out" class="Period_to">
+             <span class="add-on"><i class="glyphicon icon-calendar"><img src="../images/calendar.png"></i></span>
+           </td>
+           <!-- 地址选择组件 -->
+          <td width="20%">
+             <input type="" name="City">
+             <span><i><img src="../images/address.png"></i></span>
+           </td>
+           <td>
+            <span onclick="delTr(this)"><img src="../images/rubbish.png" style="float: right;margin-right:5px;"></span>
+           </td>
+         </table>
+            <input type="button"  value="Add" id="Reservation" />
+         </div>
+      </div>
+      <!-- 第4步 -->
+      <div class="forth-step stepPage" id="page4">
+      <div class="step-box">
+       <p>Cash Advance Requisition(For areas other than USA, Japan,China & Singapore, only provide either US$ or HK$) 
+       </p>
+       <p class="warning">All cash advance requisition need to be supported by fully approved Business Trip Application Form.</p>
+       <p class="warning">The requisition will be processed by Accounting Department.</p>
+       <table>
+         <tr>
+            <td>Please choose one currency except the trip is over one country</td>
+            <td>Advance Payment(Amount)</td>
+            <td>Please state budget usage and expected payment schedule</td>
+            <td></td>
+         </tr>
+         <td  width="30%">
+           <select name="currency" width='50px'>
+             <option value="HKD">HKD</option>
+             <option value="USD">USD</option>
+             <option value="JPY">JPY</option>
+             <option value="SGD">SGD</option>
+             <option value="RMB">RMB</option>
+           </select>
+         </td>
+        <td width="25%">
+           <input type="text" name="Payment">
+         </td>
+        <td width="40%">
+           <input type="text" name="schedule" width="100%">
+         </td>
+         <td>
+          <span onclick='delTr(this)''><img src="../images/rubbish.png" style="float: right;margin-right:5px;"></span>
+         </td>
+        </table>
+        <input type="button" onclick="addTr(this)" value="Add" id="Cash" />
+        </div>
+        <div class="Assigned">
+          <label>>>Person Assigned To Pick Up Cash Advance:</label>
+          <!-- 选择审批人 -->
+          <img src='../images/book.png' id="book">
+          <input type="text" name="Assigned">
+        </div>
+        <div>
+         <span class="Approver">Approver Selection</span>
+         <button id="Approver">Select Approver</button> 
+        </div>
+          <table>
+          <tr>
+            <td>
+            <label>Department In-Charge:</label>
+            <input type="text" name="">
+            </td>
+            <td>
+            <label>Division In-Charge:</label>
+            <input type="text" name="">
+            </td>
+            <td>
+            <label>Group Owner:</label>
+            <input type="text" name="">
+            </td>
+          </tr>
+          <tr>
+            <td>
+            <label>Management :</label>
+            <input type="text" name="">
+            </td>
+            <td>
+            <label>Management:</label>
+            <input type="text" name="">
+            </td>
+            <td>
+            <label>Cost Owner :</label>
+            <input type="text" name="">
+            </td>
+          </tr>
+          <tr>
+            <td>
+            <label>CC List:</label><img src="../images/book.png" id="cc_list">
+            <input type="text" name="" disabled="disabled" readonly>
+            </td>
+            <td>
+            </td>
+            <td>
+            </td>
+          </tr>
+        </table>
+     </div>
+      <!--  第5步 完成界面-->
+<!--       <div class="fifth-step stepPage" id="page5">
+
+      </div> -->
+        </div>
+       </div>
+      </div>
+     <!-- 通过初始化创建切换按钮 -->
+    </form>
+  <script type="text/javascript">
+  // 初始化步骤组件，创建步骤条
+      var step1=new SetStep({
+        content:'.stepCont',
+        titles:['Applicant Information','Travel Details','Request Details','Cash Advance','finish'],
+        steps:['step1','step2','step3','step4','finish'],
+    })
+  
+    //增加行
+    //第三步的第一部分
+      $('#details').click(function(obj){
+      var table=$('#details').parent().find('table',0); 
+      var len=$(table).find("tr").length-1;
+      $(table).find("tr:last").after("<tr>"
+       +"<td>T"+len+"</td>"
+       +"<td><select name='sex'><option value='Male'>Male</option><option value='Female'>Female</option></select></td>"
+       +"<td><input type='text' name='family_name'></td>"
+       +"<td><input type='text' name='given_name'></td>"
+       +"<td class='input-append date'><input type='text' name='Period_from' class='Period_from'><span class='add-on'><i class='glyphicon icon-calendar'><img src='../images/calendar.png'></i></span></td>"
+       +"<td width='2%'>/</td>"
+       +"<td class='input-append date'><input type='text' name='Period_to' class='Period_to'><span class='add-on'><i class='glyphicon icon-calendar'><img src='../images/calendar.png'></img></i></span></td>"
+       +"<td><input type='number' name='period' class='period'></td>"
+       +"<td><span onclick='delTr(this)'><img src='../images/rubbish.png'></span></td></tr>");
+       calendar();
+  })
+      
+      //第三步的第二部分
+    $('#Transport').click(function(obj){
+        var table=$('#Transport').parent().find('table',0); 
+        var len=$(table).find("tr").length-1;
+        $(table).find('tr:last').after("<tr>"
+          +"<td>A1</td>"
+          +"<td><input type='text' name='name_code'></td>"
+          +"<td class='input-append date'><input type='text' name='date'><span class='add-on'><i class='glyphicon icon-calendar'><img src='../images/calendar.png'></i></span></td>"
+          +"<td><input type='text' name='from_address'><span class='add-on'><i><img src='../images/address.png'></i></span></td>"
+          +"<td width='2%'>/</td>"
+          +"<td><input type='text' name='to_address'><span class='add-on'><i><img src='../images/address.png'></i></span></td>"
+          +"<td><input type='radio' name='from_time' value='am'><label>am</label><input type='radio' name='from_time' value='pm'><label>pm</label></td>"
+          +"<td><span onclick='delTr(this)'><img src='../images/rubbish.png'></span></td></tr>"
+        );
+         calendar();
+    })
+    //第三步的第三部分
+    $('#Reservation').click(function(obj){
+    var table=$('#Reservation').parent().find('table',0); 
+    var len=$(table).find("tr").length-1;
+    $(table).find('tr:last').after("<tr>"
+      +"<td class='input-append date' width='20%'><input type='text' name='Check-in' class='Period_from'><span class='add-on' class='Period_to'><i class='glyphicon icon-calendar'><img src='../images/calendar.png'></i></span></td>"
+      +"<td class='input-append date' width='20%'><input type='text' name='Check-Out' class='Period_to'><span class='add-on'><i class='glyphicon icon-calendar'><img src='../images/calendar.png'></i></span></td>"
+      +"<td width='20%'><input type='text' name='City'><span class='add-on'><i><img src='../images/address.png'></i></span></td>"
+      +"<td><span onclick='delTr(this)'><img src='../images/rubbish.png' style='float: right;margin-right:5px;'></span></td></tr>"
+    );
+     calendar();
+   })
+    //第四步
+    $('#Cash').click(function(obj){
+    var table=$('#Cash').parent().find('table',0); 
+    var len=$(table).find("tr").length-1;
+    $(table).find('tr:last').after("<tr>"
+      +"<td  width='30%'><select name='currency' width='50%'><option value='HKD'>HKD</option><option value='USD'>USD</option><option value='JPY'>JPY</option><option value='SGD'>SGD</option><option value='RMB'>RMB</option></select></td>"
+      +"<td width='25%'><input type='text' name='Payment'></td>"
+      +"<td width='40%'><input type='text' name='schedule' width='100%'></td>"
+      +"<td><span onclick='delTr(this)'><img src='../images/rubbish.png' style='float: right;margin-right:5px;'></span></td></tr>"
+    );
+  })
+    //删除行
+  function delTr(obj){ 
+        console.log("删除");
+      $(obj).parent().parent().remove();
+    }
+   $('#book').click(function(){
+    alert("book弹窗");
+   })
+   $('#cc_list').click(function(){
+    alert('cc_list弹框');
+   })
+    //初始化日历组件
+ function calendar(){
+   $(".date").datetimepicker({
+  // language:'zh-CN',
+  format: "yyyy-mm-dd",
+  autoclose: true,
+  todayBtn: true,
+  minView:2,
+  todayBtn:"linked",
+  todayHighlight:true,
+  pickerPosition:"top-right",
+  viewSelect:"month",
+    }); 
+ }
+ calendar();
+  </script>
+</body>
+</html>

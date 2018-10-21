@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <meta  name="viewport" content="width='device-width,initial-scale=1,maximum-scale=1, user-scalable=no">
+   <title>创建出差申请单</title>
+   <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+   <link rel="stylesheet" type="text/css" href="../css/ystep.css">
+   <link rel="stylesheet" type="text/css" href="../css/New_BTA.css">
+   <script type="text/javascript" src="../js/jquery.min.js"></script>
+   <script type="text/javascript" src='../js/bootstrap.min.js'></script>
+   <script type="text/javascript" src='../js/ystep.js'></script>
+</head>
+<body>
+   <div class="Form">
+    <div class="Form_head">
+      <span>Business Trip Application Form</span>
+      <button>Save</button>
+      <button>View Policy</button>
+      <button>Travel Advice</button>
+    </div>
+    <div class="Form_body">
+      <div class="Form_box">
+      <div class="Form_table">
+      <!--步骤组件-->
+        <div class="ystep1"></div>
+        <div class="wrapper">
+         <form action="" method="">
+        <div class="first-step">
+        <p>Application Information</p>
+        <p class="warning">Please complete the form with English</p>
+        <table>
+          <tr>
+            <td>
+            <label>Ref No. :</label>
+            <input type="text" name="">
+            </td>
+            <td>
+            <label>Status :</label>
+            <input type="text" name="">
+            </td>
+            <td>
+            <label>Prepared By :</label>
+            <input type="text" name="">
+            </td>
+          </tr>
+          <tr>
+            <td>
+            <label>Prepared By Phone :</label>
+            <input type="text" name="">
+            </td>
+            <td>
+            <label>Applicant Name :</label>
+            <input type="text" name="">
+            </td>
+            <td>
+            <label>Applicant Phone :</label>
+            <input type="text" name="" disabled="disabled">
+            </td>
+          </tr>
+          <tr>
+            <td>
+            <label>Applicant Staff No. :</label>
+            <input type="text" name="" disabled="disabled">
+            </td>
+            <td>
+            <label>Applicant Staff Type :</label>
+            <input type="text" name="" disabled="disabled" value="">
+            </td>
+            <td>
+            <label>Applicant Department :</label>
+            <input type="text" name="" disabled="disabled" value="">
+            </td>
+          </tr>
+          <tr>
+            <td>
+            <label>Applicant Job Title. :</label>
+            <input type="text" name="" disabled="disabled">
+            </td>
+            <td>
+            <label>BU Name :</label>
+            <input type="text" name=""  value="">
+            </td>
+            <td>
+            <label>Working Location :</label>
+            <input type="text" name=""  value="">
+            </td>
+          </tr>
+          <tr>
+            <td>
+            <label>Trip Expense Deduct Form :</label>
+            <select>
+              <option value="">G100-Data Storage Products</option>
+              <option value="">G100-Data Storage Products</option>
+              <option value="">G100-Data Storage Products</option>
+            </select>
+            </td>
+            <td>
+            <label>Acct. location :</label>
+            <input type="text" name="" disabled="disabled" value="">
+            </td>
+            <td>
+            <label>Contact No.:</label>
+            <input type="text" name=""  value="">
+            </td>
+          </tr>
+        </table>
+        </div>
+   <!--第2步-->
+     <div class="second-step">
+       <p>Travel Detail</p>
+       <p class="warning">Please complete the form with English</p>
+        <table>
+          <tr>
+           <td>
+          <label>Home Leave/Resign :</label>
+          <input type="radio" name="reason" value="Home Leave" checked id="radio1">
+          <label for="radio1">Home Leave</label>
+          <input type="radio" name="reason" value="Resignation" id="radio2">
+          <label for="radio2">Resignation</label>
+          <input type="radio" name="reason" value="N/A" id="radio3">
+          <label for="radio3">N/A</label>
+            </td>
+            <td>
+          <label>Trip Purpose ：</label>
+          <select name="purpose">
+          <option value="" checked>-please select-</option>
+          <option value="" >Attend conference</option>
+          <option value="">Custom Visiting</option>
+          <option value="">Vendor Visiting</option>
+          <option value="">Training</option>
+          <option value="">Meeting</option>
+          <option value="">Interview</option>
+          <option value="">On board</option>
+          <option value="">Recruitment</option>
+          <option value="">Resignation</option>
+          <option value="">Others</option>
+          </select>
+          </td>
+          </tr>
+          <tr>
+           <td colspan="2">
+           <label class="tip"><i>*Detail of Trip (Please describe why need this trip? whom will approach/meet?)</i></label>
+           </td>
+          </tr>
+          <tr>
+           <td colspan="2">
+           <textarea cols="2"  name=""></textarea>
+           </td>
+          </tr>
+          <tr>
+           <td colspan="2">
+           <label class="tip"><i>* (Please describe why need this trip? whom will approach/meet?)</i></label>
+           </td>
+          </tr>
+          <tr>
+           <td colspan="2">
+           <textarea cols="2" rows="" name=""></textarea>
+           </td>
+          </tr>
+        </table>
+     </div>
+      <!--  第3步-->
+      <div class="third-step">
+       <p>Request Details</p>
+       <p class="warning">Please complete the form with English</p>
+       <div class="step-box">
+       <p>*Traveller<span> ( Name on passport )</span></p>
+       <table id="tab">
+         <tr>
+           <td>Name Code</td>
+           <td>Sex</td>
+           <td>Family Name</td>
+           <td>Given Name</td>
+           <td>Period Form</td>
+           <td>/ Period To</td>
+           <td>No. Of Days</td>
+         </tr>
+          <tr>
+           <td>T1</td>
+           <td>
+              <select name="sex">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+             </select>
+           </td>
+           <td>
+              <input type="text" name="family_name">
+           </td>
+           <td>
+              <input type="text" name="given_name">
+           </td>
+           <td>
+              <input type="text" name="given_name">
+           </td>
+           <td>
+             <input type="text" name="given_name">
+           </td>
+           <td>
+              <input type="number" name="period">
+              <span onclick="delTr(this)"><img src="../images/rubbish.png"></span>
+           </td>
+         </tr>
+         </table>
+         <input type="button" onclick="addTr()" value="Add"/>
+         </div>
+     <!--  -->
+        <div class="step-box">
+        <p class="height40">Transport: Air/Train/Bus/Ferry <span> ( Please verify that air-ticket date should within travel period. )</span></p>
+       <table id="tab">
+         <tr>
+           <td>Ref</td>
+           <td>Name Code</td>
+           <td>Date</td>
+           <td>From</td>
+           <td>/To</td>
+           <td colspan="2">Arrival Time</td>
+         </tr>
+          <tr>
+           <td>A1</td>
+           <td>
+              <input type="text" name="name_code">
+           </td>
+           <td>
+              <input type="" name="date">
+           </td>
+           <td>
+              <input type="text" name="from_address">
+           </td>
+           <td>
+              <input type="text" name="to_address">
+           </td>
+           <td>
+             <input type="radio" name="from_time" value="am">
+             <label>am</label>
+             <input type="radio" name="from_time" value="pm">
+             <label>pm</label>
+           </td>
+           <td>             
+             <span onclick="delTr(this)"><img src="../images/rubbish.png"></span>
+           </td>
+           </tr>
+           <input type="button" onclick="addTr()" value="Add"/>
+         </tr>
+         </table>
+         <input type="button" onclick="addTr()" value="Add"/>
+         </div>
+         <div class="step-box">
+         <p class="height40">Hotel Reservation</p>
+         <table>
+           <tr>
+              <td>Check-in Date</td>
+              <td>Check-Out Date</td>
+              <td colspan="2">City</td>
+           </tr>
+           <td>
+             <input type="text" name="Check-in">
+           </td>
+          <td>
+             <input type="text" name="Check-Out">
+           </td>
+          <td>
+             <input type="" name="City">
+           </td>
+           <td>
+            <span onclick="delTr(this)"><img src="../images/rubbish.png"></span>
+           </td>
+         </table>
+            <input type="button" onclick="addTr()" value="Add"/>
+         </div>
+      </div>
+      <!-- 第4步 -->
+<!--       <div class="forth-step">
+       <p>Cash Advance Requisition(For areas other than USA, Japan,China & Singapore, only provide either US$ or HK$) 
+       </p>
+       <p class="warning">All cash advance requisition need to be supported by fully approved Business Trip Application Form. The requisition will be processed by Accounting Department. </p>
+    <table id="tab" border="1" width="60%" align="center" style="margin-top:20px">
+        <tr>
+           <td width="20%">序号</td>
+           <td>标题</td>
+           <td>描述</td>
+           <td>操作</td>
+       </tr>
+    </table>
+    <div style="border:2px; 
+                border-color:#00CC00; 
+                margin-left:20%;
+                margin-top:20px">
+        <input type="button" id="but" value="增加"/>
+    </div> -->
+      <!--  第5步-->
+<!--       <div class="fifth-step">
+
+      </div> -->
+        </form>
+        </div>
+       </div>
+      </div>
+      </div>
+    <div class="Form_footer">
+       <button id="next">Next >></button>
+       <button id="back"><< Back</button>
+    </div>
+<!--     </form> -->
+   </div>
+  <script type="text/javascript">
+     // 获取填表的步骤
+     var stepCounts=$('.Form_table table');
+     // 当前为步骤1
+     var step=1;
+     //初始化步骤组件
+     $(".ystep1").loadStep({
+      //ystep的外观大小
+      //可选值：small,large
+      size: "large",
+      //ystep配色方案
+      //可选值：green,blue
+      color: "blue",
+      //ystep中包含的步骤
+      steps: [{
+        //步骤名称
+        title: "step1",
+        //步骤内容(鼠标移动到本步骤节点时，会提示该内容)
+        content: "Applicant Information"
+      },{
+        title: "step2",
+        content: "Travel Details"
+      },{
+        title: "step3",
+        content: "Request Details"
+      },{
+        title: "step4",
+        content: "Cash Advance Requisition"
+      },
+        {
+         title:'completed',
+         content:'completed'
+        }]
+    });
+     // 步骤组件点击按钮
+   $('#back').click(function(){
+    $(".ystep1").prevStep();
+   });
+   $('#next').click(function(){
+    $(".ystep1").nextStep();
+   });
+  
+    //增加行
+    function addTr(onj){  
+      var len=$("#tab tr").length-1;
+      console.log(len);
+      $("#tab tr:last").after("<tr>"
+       +"<td>T"+len+"</td>"
+       +"<td><select name='sex'><option value='Male'>Male</option><option value='Female'>Female</option></select></td>"
+       +"<td><input type='text' name='family_name'></td>"
+       +"<td><input type='text' name='given_name'></td>"
+       +"<td><input type='text' name='given_name'></td>"
+       +"<td><input type='text' name='given_name'></td>"
+       +"<td><input type='number' name='period'><span onclick='delTr(this)'><img src='../images/rubbish.png'></span></td></tr>");
+    }
+    //删除行
+      function delTr(obj){ 
+        console.log("删除");
+      $(obj).parent().parent().remove();
+    }
+  </script>
+</body>
+</html>
